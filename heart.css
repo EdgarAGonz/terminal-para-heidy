@@ -1,0 +1,40 @@
+.heart {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: pink;
+    transform: rotate(45deg);
+    animation: float 4s ease-in-out forwards;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .heart::before {
+    top: -7.5px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: -7.5px;
+    top: 0;
+  }
+  
+  @keyframes float {
+    0% {
+      opacity: 1;
+      transform: translateY(0) rotate(45deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-200px) rotate(45deg);
+    }
+  }
+  

@@ -2,25 +2,26 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Terminal para Heidy 💻❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal para Heidy 💚</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="heart.css">
 </head>
 <body>
-
-<div id="terminal">
+  <div id="terminal">
     <div id="staticOutput">
-        <span>Accediendo al sistema Heidy...</span><br>
-        <span>Usuario: danny (root)</span><br>
-        <span>Acceso concedido. 💕</span><br>
-        <span>Comandos disponibles: cd corazon, ls, cat [nombre], mensaje, clear, help</span><br>
+      <span>Accediendo al sistema Heidy...</span><br>
+      <span>Usuario: danny (root)</span><br>
+      <span>Acceso concedido. 💕</span><br>
+      <span>Comandos disponibles: cd corazon, ls, cat [nombre], mensaje, sudo love ., clear, help</span><br>
     </div>
     <div id="dynamicOutput"></div>
     <div id="inputLine">
-        <span class="prompt">heidy@corazon:~$</span>
-        <input type="text" id="input" autofocus>
+      <span class="prompt">heidy@corazon:~$</span>
+      <input type="text" id="input" autofocus>
     </div>
-</div>
-
-<script src="script.js"></script>
+  </div>
+  <audio id="keySound" src="beep.wav" preload="auto"></audio>
+  <script src="script.js"></script>
 </body>
 </html>
