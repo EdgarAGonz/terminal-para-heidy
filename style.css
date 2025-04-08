@@ -1,0 +1,50 @@
+body {
+  background-color: #0f0f0f;
+  color: #2abcc7;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+#terminal {
+  max-width: 800px;
+  margin: auto;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+#output {
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+#inputLine {
+  display: flex;
+}
+
+.prompt {
+  margin-right: 10px;
+}
+
+input {
+  background: black;
+  border: none;
+  color: #a924dd;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+#staticOutput {
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    color: #66ff66;
+  }
+  
+  #dynamicOutput {
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+  }
+  
