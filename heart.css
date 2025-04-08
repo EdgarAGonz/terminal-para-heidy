@@ -12,7 +12,7 @@
     content: "";
     width: 15px;
     height: 15px;
-    background: pink;
+    background: rgb(255, 47, 82);
     border-radius: 50%;
     position: absolute;
   }
