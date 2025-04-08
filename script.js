@@ -9,7 +9,7 @@ const responses = {
   'cat confianza': 'Siempre puedes contar conmigo.',
   'cat apoyo': 'Estaré a tu lado en cada paso.',
   'cat aventuras': 'Nos esperan muchas historias por vivir.',
-  'cat secreto.txt': '🌌 Quiero que sepas que todo esto lo hice pensando en ti.\nNo importa cuánto tiempo pase o cuántos comandos escribas,\nmi cariño por ti siempre estará aquí.\n- Danny 💚',
+  'cat secreto.txt': '🌌 Quiero que sepas que todo esto lo hice pensando en ti.\nNo importa cuánto tiempo pase o cuántos comandos escribas,\nmi cariño por ti siempre estará aquí.\n- Danny 🐧',
   'mensaje': `Así que si quieres ver algo, te ayudaré a conseguirlo.\nSi no sabes algo, te lo enseñaré.\nPero cuando quieras lograr algo por tus propios medios, no interferiré.`,
   'help': 'Comandos disponibles: cd corazon, ls, cat [nombre], mensaje, sudo love ., clear, help',
 };
@@ -121,6 +121,21 @@ if (command === 'clear') {
   }
 }
 */
+function createHearts() {
+  const container = document.getElementById('heartsContainer');
+
+  // Crear múltiples corazones
+  for (let i = 0; i < 20; i++) {
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.style.left = Math.random() * 100 + '%';
+    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+    container.appendChild(heart);
+
+    // Eliminar el corazón después de la animación
+    heart.addEventListener('animationend', () => heart.remove());
+  }
+}
 
 function startStarsFalling() {
   // Create just a few initial stars

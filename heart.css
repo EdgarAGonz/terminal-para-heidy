@@ -2,6 +2,7 @@
     width: 15px;
     height: 15px;
     position: absolute;
+    bottom: 0;
     background: pink;
     transform: rotate(45deg);
     animation: float 4s ease-in-out forwards;
