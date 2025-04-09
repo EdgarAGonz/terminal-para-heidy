@@ -11,7 +11,7 @@ const responses = {
   'cat aventuras': 'Nos esperan muchas historias por vivir.',
   'cat secreto.txt': '🌌 Quiero que sepas que todo esto lo hice pensando en ti.\nNo importa cuánto tiempo pase o cuántos comandos escribas,\nmi cariño por ti siempre estará aquí.\n- Danny 🐧',
   'mensaje': `Así que si quieres ver algo, te ayudaré a conseguirlo.\nSi no sabes algo, te lo enseñaré.\nPero cuando quieras lograr algo por tus propios medios, no interferiré.`,
-  'help': 'Comandos disponibles: cd corazon, ls, cat [nombre], mensaje, sudo love ., clear, help',
+  'help': 'Comandos disponibles: cd corazon, ls, cat [nombre], mensaje, sudo love ., clear, help, secreto.txt', 
 };
 
 function createFallingHeart() {
